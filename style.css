@@ -65,18 +65,6 @@ img {
   background: transparent;
 }
 
-.language-switcher {
-  margin-bottom: 18px;
-}
-
-.language-switcher label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--muted);
-}
-
 .brand-block h1,
 .panel-head h3,
 .section-head h2,
@@ -116,7 +104,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 34px;
 }
 
 .nav-link {

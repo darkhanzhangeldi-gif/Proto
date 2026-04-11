@@ -1,250 +1,3 @@
-const translations = {
-  en: {
-    language: "Language",
-    navDashboard: "Dashboard",
-    navVenues: "Venue booking",
-    navProviders: "Providers",
-    navSaved: "Saved",
-    navBudget: "Budget",
-    navTasks: "Tasks",
-    navTimeline: "Timeline",
-    currentEvent: "Current event",
-    currentEventTitle: "Amina & Dias Wedding",
-    currentEventMeta: "126 guests • 24 May 2026 • Almaty",
-    heroChip: "Full planning workspace",
-    heroTitle: "Organize weddings and celebrations from one place.",
-    heroText: "Book venues, compare providers, control budget, assign tasks, and manage the full event timeline.",
-    heroExplore: "Explore venues",
-    heroProviders: "Find providers",
-    metricPlannedLabel: "Budget planned",
-    metricPlannedHint: "All categories combined",
-    metricActualLabel: "Spent now",
-    metricActualHint: "Deposits and paid items",
-    metricTasksLabel: "Tasks done",
-    metricTasksHint: "Planning progress",
-    metricStatusLabel: "Planning status",
-    metricStatusHint: "Based on task completion",
-    selectedVenueHeading: "Selected venue",
-    inspirationHeading: "Inspiration",
-    venuesHeading: "Venue booking",
-    venuesText: "Search venues for weddings and celebrations and mark your selected venue.",
-    venueSearchPlaceholder: "Search city, type, or venue",
-    providersHeading: "Search professionals and companies",
-    providersText: "Find photographers, decorators, caterers, hosts, musicians, and more.",
-    providerSearchPlaceholder: "Search providers",
-    savedHeading: "Saved",
-    savedText: "Your favorite venues and providers in one place.",
-    savedVenuesHeading: "Saved venues",
-    savedProvidersHeading: "Saved providers",
-    budgetHeading: "Budget management",
-    budgetText: "Track planned cost, actual spend, and category status.",
-    budgetPlannedLabel: "Planned",
-    budgetActualLabel: "Actual",
-    budgetRemainingLabel: "Remaining",
-    thCategory: "Category",
-    thPlanned: "Planned",
-    thActual: "Actual",
-    thStatus: "Status",
-    thAction: "Action",
-    addBudgetHeading: "Add budget item",
-    newBudgetCategoryPlaceholder: "Category",
-    newBudgetPlannedPlaceholder: "Planned amount",
-    addBudgetBtn: "Add item",
-    tasksHeading: "Task management",
-    tasksText: "Assign and track planning tasks before the event day.",
-    newTaskInputPlaceholder: "Add a task",
-    addTaskBtn: "Add",
-    timelineHeading: "Timeline management",
-    timelineText: "Build the event-day sequence from preparation to the final celebration.",
-    addTimelineHeading: "Add timeline item",
-    timelineEventPlaceholder: "Event name",
-    timelinePlacePlaceholder: "Location",
-    addTimelineBtn: "Add to timeline",
-    noVenueSelected: "No venue selected yet.",
-    booked: "Booked",
-    selectedVenue: "Selected venue",
-    save: "Save",
-    saved: "Saved",
-    remove: "Remove",
-    bookThisVenue: "Book this venue",
-    book: "Book",
-    contact: "Contact",
-    categoryAll: "All",
-    capacity: "Capacity",
-    from: "From",
-    guests: "guests",
-    noSavedVenues: "No saved venues yet.",
-    noSavedProviders: "No saved providers yet.",
-    addBudgetStatus: "Planned",
-    completed: "Completed",
-    open: "Open",
-    owner: "Owner",
-    due: "Due",
-    details: "Details",
-    statuses: {
-      Paid: "Paid",
-      Deposit: "Deposit",
-      Planned: "Planned",
-      Negotiation: "Negotiation",
-    },
-    priorities: {
-      High: "High",
-      Medium: "Medium",
-      Low: "Low",
-    },
-    categories: {
-      Photography: "Photography",
-      Decoration: "Decoration",
-      Catering: "Catering",
-      "Host / MC": "Host / MC",
-      Music: "Music",
-      Venue: "Venue",
-      Wedding: "Wedding",
-      Birthday: "Birthday",
-      Anniversary: "Anniversary",
-    },
-    timelineEvents: {
-      "Preparation starts": "Preparation starts",
-      "Photo session": "Photo session",
-      "Guest arrival": "Guest arrival",
-      Ceremony: "Ceremony",
-      "Dinner service": "Dinner service",
-      "Cake & dancing": "Cake & dancing",
-    },
-    places: {
-      "Bridal suite": "Bridal suite",
-      "City park": "City park",
-      "Royal Garden Hall": "Royal Garden Hall",
-      "Main stage": "Main stage",
-      "Banquet area": "Banquet area",
-      Ballroom: "Ballroom",
-    },
-  },
-  ru: {
-    language: "Язык",
-    navDashboard: "Главная",
-    navVenues: "Площадки",
-    navProviders: "Подрядчики",
-    navSaved: "Избранное",
-    navBudget: "Бюджет",
-    navTasks: "Задачи",
-    navTimeline: "Таймлайн",
-    currentEvent: "Текущее событие",
-    currentEventTitle: "Свадьба Амины и Диаса",
-    currentEventMeta: "126 гостей • 24 мая 2026 • Алматы",
-    heroChip: "Единое пространство планирования",
-    heroTitle: "Организуйте свадьбы и праздники в одном месте.",
-    heroText: "Бронируйте площадки, сравнивайте подрядчиков, контролируйте бюджет, распределяйте задачи и управляйте таймлайном мероприятия.",
-    heroExplore: "Смотреть площадки",
-    heroProviders: "Найти подрядчиков",
-    metricPlannedLabel: "Плановый бюджет",
-    metricPlannedHint: "Все категории вместе",
-    metricActualLabel: "Уже потрачено",
-    metricActualHint: "Депозиты и оплаченные позиции",
-    metricTasksLabel: "Задачи выполнены",
-    metricTasksHint: "Прогресс планирования",
-    metricStatusLabel: "Статус подготовки",
-    metricStatusHint: "На основе выполненных задач",
-    selectedVenueHeading: "Выбранная площадка",
-    inspirationHeading: "Вдохновение",
-    venuesHeading: "Бронирование площадки",
-    venuesText: "Ищите площадки для свадеб и других мероприятий и отмечайте выбранную площадку.",
-    venueSearchPlaceholder: "Поиск по городу, типу или названию",
-    providersHeading: "Поиск специалистов и компаний",
-    providersText: "Ищите фотографов, декораторов, кейтеринг, ведущих, музыкантов и других подрядчиков.",
-    providerSearchPlaceholder: "Поиск подрядчиков",
-    savedHeading: "Избранное",
-    savedText: "Ваши избранные площадки и подрядчики в одном месте.",
-    savedVenuesHeading: "Избранные площадки",
-    savedProvidersHeading: "Избранные подрядчики",
-    budgetHeading: "Управление бюджетом",
-    budgetText: "Отслеживайте плановые суммы, фактические расходы и статус по категориям.",
-    budgetPlannedLabel: "План",
-    budgetActualLabel: "Факт",
-    budgetRemainingLabel: "Остаток",
-    thCategory: "Категория",
-    thPlanned: "План",
-    thActual: "Факт",
-    thStatus: "Статус",
-    thAction: "Действие",
-    addBudgetHeading: "Добавить статью бюджета",
-    newBudgetCategoryPlaceholder: "Категория",
-    newBudgetPlannedPlaceholder: "Плановая сумма",
-    addBudgetBtn: "Добавить",
-    tasksHeading: "Управление задачами",
-    tasksText: "Назначайте и отслеживайте задачи до дня мероприятия.",
-    newTaskInputPlaceholder: "Добавить задачу",
-    addTaskBtn: "Добавить",
-    timelineHeading: "Управление таймлайном",
-    timelineText: "Постройте последовательность дня мероприятия от подготовки до финального праздника.",
-    addTimelineHeading: "Добавить пункт таймлайна",
-    timelineEventPlaceholder: "Название события",
-    timelinePlacePlaceholder: "Локация",
-    addTimelineBtn: "Добавить в таймлайн",
-    noVenueSelected: "Площадка пока не выбрана.",
-    booked: "Забронировано",
-    selectedVenue: "Выбранная площадка",
-    save: "Сохранить",
-    saved: "Сохранено",
-    remove: "Удалить",
-    bookThisVenue: "Выбрать площадку",
-    book: "Выбрать",
-    contact: "Связаться",
-    categoryAll: "Все",
-    capacity: "Вместимость",
-    from: "От",
-    guests: "гостей",
-    noSavedVenues: "Пока нет избранных площадок.",
-    noSavedProviders: "Пока нет избранных подрядчиков.",
-    addBudgetStatus: "План",
-    completed: "Выполнено",
-    open: "Открыто",
-    owner: "Ответственный",
-    due: "Срок",
-    details: "Подробнее",
-    statuses: {
-      Paid: "Оплачено",
-      Deposit: "Депозит",
-      Planned: "План",
-      Negotiation: "Переговоры",
-    },
-    priorities: {
-      High: "Высокий",
-      Medium: "Средний",
-      Low: "Низкий",
-    },
-    categories: {
-      Photography: "Фотография",
-      Decoration: "Декор",
-      Catering: "Кейтеринг",
-      "Host / MC": "Ведущий",
-      Music: "Музыка",
-      Venue: "Площадка",
-      Wedding: "Свадьба",
-      Birthday: "День рождения",
-      Anniversary: "Юбилей",
-    },
-    timelineEvents: {
-      "Preparation starts": "Начало подготовки",
-      "Photo session": "Фотосессия",
-      "Guest arrival": "Прибытие гостей",
-      Ceremony: "Церемония",
-      "Dinner service": "Подача ужина",
-      "Cake & dancing": "Торт и танцы",
-    },
-    places: {
-      "Bridal suite": "Комната невесты",
-      "City park": "Городской парк",
-      "Royal Garden Hall": "Royal Garden Hall",
-      "Main stage": "Главная сцена",
-      "Banquet area": "Банкетная зона",
-      Ballroom: "Бальный зал",
-    },
-  },
-};
-
-let currentLang = localStorage.getItem("meiram_language") || "en";
-
 const venues = [
   {
     id: 1,
@@ -389,40 +142,13 @@ const timeline = [
   { id: 6, time: "21:30", event: "Cake & dancing", place: "Ballroom" },
 ];
 
+const formatKZT = (value) => `${new Intl.NumberFormat("en-US").format(value)} ₸`;
+
 const navLinks = document.querySelectorAll(".nav-link");
 const panels = document.querySelectorAll(".tab-panel");
 const venueSearch = document.getElementById("venueSearch");
 const providerSearch = document.getElementById("providerSearch");
 const providerCategory = document.getElementById("providerCategory");
-const languageSelect = document.getElementById("languageSelect");
-
-function t() {
-  return translations[currentLang];
-}
-
-function formatKZT(value) {
-  return `${new Intl.NumberFormat(currentLang === "ru" ? "ru-RU" : "en-US").format(value)} ₸`;
-}
-
-function translateCategory(value) {
-  return t().categories[value] || value;
-}
-
-function translateStatus(value) {
-  return t().statuses[value] || value;
-}
-
-function translatePriority(value) {
-  return t().priorities[value] || value;
-}
-
-function translateEvent(value) {
-  return t().timelineEvents[value] || value;
-}
-
-function translatePlace(value) {
-  return t().places[value] || value;
-}
 
 function switchTab(tabId) {
   navLinks.forEach((btn) => btn.classList.toggle("active", btn.dataset.tab === tabId));
@@ -437,78 +163,11 @@ document.querySelectorAll("[data-go]").forEach((btn) => {
   btn.addEventListener("click", () => switchTab(btn.dataset.go));
 });
 
-function renderStaticText() {
-  const dict = t();
-
-  document.documentElement.lang = currentLang;
-  document.getElementById("languageLabel").textContent = dict.language;
-  document.getElementById("navDashboard").textContent = dict.navDashboard;
-  document.getElementById("navVenues").textContent = dict.navVenues;
-  document.getElementById("navProviders").textContent = dict.navProviders;
-  document.getElementById("navSaved").textContent = dict.navSaved;
-  document.getElementById("navBudget").textContent = dict.navBudget;
-  document.getElementById("navTasks").textContent = dict.navTasks;
-  document.getElementById("navTimeline").textContent = dict.navTimeline;
-  document.getElementById("currentEventLabel").textContent = dict.currentEvent;
-  document.getElementById("currentEventTitle").textContent = dict.currentEventTitle;
-  document.getElementById("currentEventMeta").textContent = dict.currentEventMeta;
-  document.getElementById("heroChip").textContent = dict.heroChip;
-  document.getElementById("heroTitle").textContent = dict.heroTitle;
-  document.getElementById("heroText").textContent = dict.heroText;
-  document.getElementById("heroExplore").textContent = dict.heroExplore;
-  document.getElementById("heroProviders").textContent = dict.heroProviders;
-  document.getElementById("metricPlannedLabel").textContent = dict.metricPlannedLabel;
-  document.getElementById("metricPlannedHint").textContent = dict.metricPlannedHint;
-  document.getElementById("metricActualLabel").textContent = dict.metricActualLabel;
-  document.getElementById("metricActualHint").textContent = dict.metricActualHint;
-  document.getElementById("metricTasksLabel").textContent = dict.metricTasksLabel;
-  document.getElementById("metricTasksHint").textContent = dict.metricTasksHint;
-  document.getElementById("metricStatusLabel").textContent = dict.metricStatusLabel;
-  document.getElementById("metricStatusHint").textContent = dict.metricStatusHint;
-  document.getElementById("selectedVenueHeading").textContent = dict.selectedVenueHeading;
-  document.getElementById("inspirationHeading").textContent = dict.inspirationHeading;
-  document.getElementById("venuesHeading").textContent = dict.venuesHeading;
-  document.getElementById("venuesText").textContent = dict.venuesText;
-  document.getElementById("venueSearch").placeholder = dict.venueSearchPlaceholder;
-  document.getElementById("providersHeading").textContent = dict.providersHeading;
-  document.getElementById("providersText").textContent = dict.providersText;
-  document.getElementById("providerSearch").placeholder = dict.providerSearchPlaceholder;
-  document.getElementById("savedHeading").textContent = dict.savedHeading;
-  document.getElementById("savedText").textContent = dict.savedText;
-  document.getElementById("savedVenuesHeading").textContent = dict.savedVenuesHeading;
-  document.getElementById("savedProvidersHeading").textContent = dict.savedProvidersHeading;
-  document.getElementById("budgetHeading").textContent = dict.budgetHeading;
-  document.getElementById("budgetText").textContent = dict.budgetText;
-  document.getElementById("budgetPlannedLabel").textContent = dict.budgetPlannedLabel;
-  document.getElementById("budgetActualLabel").textContent = dict.budgetActualLabel;
-  document.getElementById("budgetRemainingLabel").textContent = dict.budgetRemainingLabel;
-  document.getElementById("thCategory").textContent = dict.thCategory;
-  document.getElementById("thPlanned").textContent = dict.thPlanned;
-  document.getElementById("thActual").textContent = dict.thActual;
-  document.getElementById("thStatus").textContent = dict.thStatus;
-  document.getElementById("thAction").textContent = dict.thAction;
-  document.getElementById("addBudgetHeading").textContent = dict.addBudgetHeading;
-  document.getElementById("newBudgetCategory").placeholder = dict.newBudgetCategoryPlaceholder;
-  document.getElementById("newBudgetPlanned").placeholder = dict.newBudgetPlannedPlaceholder;
-  document.getElementById("addBudgetBtn").textContent = dict.addBudgetBtn;
-  document.getElementById("tasksHeading").textContent = dict.tasksHeading;
-  document.getElementById("tasksText").textContent = dict.tasksText;
-  document.getElementById("newTaskInput").placeholder = dict.newTaskInputPlaceholder;
-  document.getElementById("addTaskBtn").textContent = dict.addTaskBtn;
-  document.getElementById("timelineHeading").textContent = dict.timelineHeading;
-  document.getElementById("timelineText").textContent = dict.timelineText;
-  document.getElementById("addTimelineHeading").textContent = dict.addTimelineHeading;
-  document.getElementById("timelineEvent").placeholder = dict.timelineEventPlaceholder;
-  document.getElementById("timelinePlace").placeholder = dict.timelinePlacePlaceholder;
-  document.getElementById("addTimelineBtn").textContent = dict.addTimelineBtn;
-  languageSelect.value = currentLang;
-}
-
 function renderVenueSelectorCard() {
   const selected = venues.find((venue) => venue.booked);
   const wrapper = document.getElementById("selectedVenueCard");
   if (!selected) {
-    wrapper.innerHTML = `<p class="empty-state">${t().noVenueSelected}</p>`;
+    wrapper.innerHTML = "<p class='empty-state'>No venue selected yet.</p>";
     return;
   }
 
@@ -517,9 +176,9 @@ function renderVenueSelectorCard() {
       <img src="${selected.image}" alt="${selected.name}" />
       <div>
         <h3>${selected.name}</h3>
-        <p class="venue-meta">${selected.city} • Up to ${selected.guests} ${t().guests} • ${translateCategory(selected.type)}</p>
+        <p class="venue-meta">${selected.city} • Up to ${selected.guests} guests • ${selected.type}</p>
         <div class="card-actions">
-          <span class="status-badge">${t().booked}</span>
+          <span class="status-badge">Booked</span>
           <span class="rating-badge">⭐ ${selected.rating}</span>
           <span class="category-badge">${formatKZT(selected.price)}</span>
         </div>
@@ -538,6 +197,7 @@ function renderMetrics() {
   document.getElementById("actualTotal").textContent = formatKZT(actualTotal);
   document.getElementById("tasksDone").textContent = `${completed} / ${tasks.length}`;
   document.getElementById("progressPercent").textContent = `${percent}%`;
+
   document.getElementById("plannedTotalBudget").textContent = formatKZT(plannedTotal);
   document.getElementById("actualTotalBudget").textContent = formatKZT(actualTotal);
   document.getElementById("remainingTotalBudget").textContent = formatKZT(plannedTotal - actualTotal);
@@ -546,38 +206,44 @@ function renderMetrics() {
 function renderVenues() {
   const grid = document.getElementById("venuesGrid");
   const value = venueSearch.value.trim().toLowerCase();
-  const filtered = venues.filter((venue) => `${venue.name} ${venue.city} ${venue.type}`.toLowerCase().includes(value));
+  const filtered = venues.filter((venue) =>
+    `${venue.name} ${venue.city} ${venue.type}`.toLowerCase().includes(value)
+  );
 
-  grid.innerHTML = filtered.map((venue) => `
-    <article class="venue-card">
-      <img src="${venue.image}" alt="${venue.name}" />
-      <div class="venue-body">
-        <div class="card-top">
-          <div>
-            <h3>${venue.name}</h3>
-            <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+  grid.innerHTML = filtered
+    .map(
+      (venue) => `
+      <article class="venue-card">
+        <img src="${venue.image}" alt="${venue.name}" />
+        <div class="venue-body">
+          <div class="card-top">
+            <div>
+              <h3>${venue.name}</h3>
+              <p class="venue-meta">${venue.city} • ${venue.type}</p>
+            </div>
+            <span class="rating-badge">⭐ ${venue.rating}</span>
           </div>
-          <span class="rating-badge">⭐ ${venue.rating}</span>
-        </div>
 
-        <div class="venue-meta-grid">
-          <div class="meta-box">
-            <span class="venue-meta">${t().capacity}</span>
-            <strong>${venue.guests} ${t().guests}</strong>
+          <div class="venue-meta-grid">
+            <div class="meta-box">
+              <span class="venue-meta">Capacity</span>
+              <strong>${venue.guests} guests</strong>
+            </div>
+            <div class="meta-box">
+              <span class="venue-meta">From</span>
+              <strong>${formatKZT(venue.price)}</strong>
+            </div>
           </div>
-          <div class="meta-box">
-            <span class="venue-meta">${t().from}</span>
-            <strong>${formatKZT(venue.price)}</strong>
-          </div>
-        </div>
 
-        <div class="card-actions">
-          <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().bookThisVenue}</button>
-          <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${venue.saved ? t().saved : t().save}</button>
+          <div class="card-actions">
+            <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? "Selected venue" : "Book this venue"}</button>
+            <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${venue.saved ? "Saved" : "Save"}</button>
+          </div>
         </div>
-      </div>
-    </article>
-  `).join("");
+      </article>
+    `
+    )
+    .join("");
 }
 
 function bookVenue(id) {
@@ -586,7 +252,6 @@ function bookVenue(id) {
   });
   renderVenues();
   renderVenueSelectorCard();
-  renderSaved();
 }
 
 function toggleSaveVenue(id) {
@@ -602,7 +267,9 @@ window.toggleSaveVenue = toggleSaveVenue;
 
 function populateProviderCategories() {
   const categories = ["All", ...new Set(providers.map((provider) => provider.category))];
-  providerCategory.innerHTML = categories.map((category) => `<option value="${category}">${category === "All" ? t().categoryAll : translateCategory(category)}</option>`).join("");
+  providerCategory.innerHTML = categories
+    .map((category) => `<option value="${category}">${category}</option>`)
+    .join("");
 }
 
 function renderProviders() {
@@ -616,30 +283,34 @@ function renderProviders() {
     return text.includes(searchValue) && categoryMatch;
   });
 
-  grid.innerHTML = filtered.map((provider) => `
-    <article class="provider-card">
-      <img src="${provider.image}" alt="${provider.name}" />
-      <div class="provider-body">
-        <div class="card-top">
-          <div>
-            <span class="category-badge">${translateCategory(provider.category)}</span>
-            <h3 style="margin-top: 10px;">${provider.name}</h3>
-            <p class="provider-sub">${provider.company} • ${provider.city}</p>
+  grid.innerHTML = filtered
+    .map(
+      (provider) => `
+      <article class="provider-card">
+        <img src="${provider.image}" alt="${provider.name}" />
+        <div class="provider-body">
+          <div class="card-top">
+            <div>
+              <span class="category-badge">${provider.category}</span>
+              <h3 style="margin-top: 10px;">${provider.name}</h3>
+              <p class="provider-sub">${provider.company} • ${provider.city}</p>
+            </div>
+            <span class="rating-badge">⭐ ${provider.rating}</span>
           </div>
-          <span class="rating-badge">⭐ ${provider.rating}</span>
+          <div class="provider-info">
+            <span>from ${formatKZT(provider.priceFrom)}</span>
+            <span>${provider.phone}</span>
+            <span>${provider.email}</span>
+          </div>
+          <div class="card-actions">
+            <button class="primary-btn">Contact</button>
+            <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${provider.saved ? "Saved" : "Save"}</button>
+          </div>
         </div>
-        <div class="provider-info">
-          <span>${t().from.toLowerCase()} ${formatKZT(provider.priceFrom)}</span>
-          <span>${provider.phone}</span>
-          <span>${provider.email}</span>
-        </div>
-        <div class="card-actions">
-          <button class="primary-btn">${t().contact}</button>
-          <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${provider.saved ? t().saved : t().save}</button>
-        </div>
-      </div>
-    </article>
-  `).join("");
+      </article>
+    `
+    )
+    .join("");
 }
 
 function toggleSaveProvider(id) {
@@ -660,60 +331,72 @@ function renderSaved() {
   const savedProviders = providers.filter((item) => item.saved);
 
   savedVenuesGrid.innerHTML = savedVenues.length
-    ? savedVenues.map((venue) => `
-      <article class="venue-card">
-        <img src="${venue.image}" alt="${venue.name}" />
-        <div class="venue-body">
-          <div class="card-top">
-            <div>
-              <h3>${venue.name}</h3>
-              <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+    ? savedVenues
+        .map(
+          (venue) => `
+          <article class="venue-card">
+            <img src="${venue.image}" alt="${venue.name}" />
+            <div class="venue-body">
+              <div class="card-top">
+                <div>
+                  <h3>${venue.name}</h3>
+                  <p class="venue-meta">${venue.city} • ${venue.type}</p>
+                </div>
+                <span class="rating-badge">⭐ ${venue.rating}</span>
+              </div>
+              <div class="card-actions">
+                <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? "Selected venue" : "Book"}</button>
+                <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">Remove</button>
+              </div>
             </div>
-            <span class="rating-badge">⭐ ${venue.rating}</span>
-          </div>
-          <div class="card-actions">
-            <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().book}</button>
-            <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${t().remove}</button>
-          </div>
-        </div>
-      </article>
-    `).join("")
-    : `<p class="empty-state">${t().noSavedVenues}</p>`;
+          </article>
+        `
+        )
+        .join("")
+    : "<p class='empty-state'>No saved venues yet.</p>";
 
   savedProvidersGrid.innerHTML = savedProviders.length
-    ? savedProviders.map((provider) => `
-      <article class="provider-card">
-        <img src="${provider.image}" alt="${provider.name}" />
-        <div class="provider-body">
-          <div class="card-top">
-            <div>
-              <span class="category-badge">${translateCategory(provider.category)}</span>
-              <h3 style="margin-top: 10px;">${provider.name}</h3>
-              <p class="provider-sub">${provider.company} • ${provider.city}</p>
+    ? savedProviders
+        .map(
+          (provider) => `
+          <article class="provider-card">
+            <img src="${provider.image}" alt="${provider.name}" />
+            <div class="provider-body">
+              <div class="card-top">
+                <div>
+                  <span class="category-badge">${provider.category}</span>
+                  <h3 style="margin-top: 10px;">${provider.name}</h3>
+                  <p class="provider-sub">${provider.company} • ${provider.city}</p>
+                </div>
+                <span class="rating-badge">⭐ ${provider.rating}</span>
+              </div>
+              <div class="card-actions">
+                <button class="primary-btn">Contact</button>
+                <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">Remove</button>
+              </div>
             </div>
-            <span class="rating-badge">⭐ ${provider.rating}</span>
-          </div>
-          <div class="card-actions">
-            <button class="primary-btn">${t().contact}</button>
-            <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${t().remove}</button>
-          </div>
-        </div>
-      </article>
-    `).join("")
-    : `<p class="empty-state">${t().noSavedProviders}</p>`;
+          </article>
+        `
+        )
+        .join("")
+    : "<p class='empty-state'>No saved providers yet.</p>";
 }
 
 function renderBudget() {
   const body = document.getElementById("budgetTableBody");
-  body.innerHTML = budget.map((item) => `
-    <tr>
-      <td>${translateCategory(item.category)}</td>
-      <td>${formatKZT(item.planned)}</td>
-      <td>${formatKZT(item.actual)}</td>
-      <td><span class="status-badge">${translateStatus(item.status)}</span></td>
-      <td><button class="delete-btn" onclick="removeBudgetItem(${item.id})">${t().remove}</button></td>
-    </tr>
-  `).join("");
+  body.innerHTML = budget
+    .map(
+      (item) => `
+      <tr>
+        <td>${item.category}</td>
+        <td>${formatKZT(item.planned)}</td>
+        <td>${formatKZT(item.actual)}</td>
+        <td><span class="status-badge">${item.status}</span></td>
+        <td><button class="delete-btn" onclick="removeBudgetItem(${item.id})">Delete</button></td>
+      </tr>
+    `
+    )
+    .join("");
 }
 
 function removeBudgetItem(id) {
@@ -748,21 +431,25 @@ document.getElementById("addBudgetBtn").addEventListener("click", () => {
 
 function renderTasks() {
   const list = document.getElementById("tasksList");
-  list.innerHTML = tasks.map((task) => `
-    <article class="task-card">
-      <div class="task-main">
-        <button class="task-toggle ${task.done ? "done" : ""}" onclick="toggleTask(${task.id})"></button>
-        <div>
-          <h3 class="task-title ${task.done ? "done" : ""}">${task.title}</h3>
-          <p class="task-sub">${t().owner}: ${task.owner} • ${t().due}: ${task.due}</p>
+  list.innerHTML = tasks
+    .map(
+      (task) => `
+      <article class="task-card">
+        <div class="task-main">
+          <button class="task-toggle ${task.done ? "done" : ""}" onclick="toggleTask(${task.id})"></button>
+          <div>
+            <h3 class="task-title ${task.done ? "done" : ""}">${task.title}</h3>
+            <p class="task-sub">Owner: ${task.owner} • Due: ${task.due}</p>
+          </div>
         </div>
-      </div>
-      <div class="card-actions">
-        <span class="priority-badge priority-${task.priority.toLowerCase()}">${translatePriority(task.priority)}</span>
-        <span class="status-badge">${task.done ? t().completed : t().open}</span>
-      </div>
-    </article>
-  `).join("");
+        <div class="card-actions">
+          <span class="priority-badge priority-${task.priority.toLowerCase()}">${task.priority}</span>
+          <span class="status-badge">${task.done ? "Completed" : "Open"}</span>
+        </div>
+      </article>
+    `
+    )
+    .join("");
 }
 
 function toggleTask(id) {
@@ -782,7 +469,7 @@ document.getElementById("addTaskBtn").addEventListener("click", () => {
   tasks.push({
     id: Date.now(),
     title,
-    owner: currentLang === "ru" ? "Вы" : "You",
+    owner: "You",
     due: "2026-05-20",
     priority: "Medium",
     done: false,
@@ -797,15 +484,19 @@ function renderTimeline() {
   const list = document.getElementById("timelineList");
   const ordered = [...timeline].sort((a, b) => a.time.localeCompare(b.time));
 
-  list.innerHTML = ordered.map((item) => `
-    <div class="timeline-item">
-      <div class="timeline-time">${item.time}</div>
-      <div class="timeline-card">
-        <h3>${translateEvent(item.event)}</h3>
-        <p class="timeline-place">${translatePlace(item.place)}</p>
+  list.innerHTML = ordered
+    .map(
+      (item) => `
+      <div class="timeline-item">
+        <div class="timeline-time">${item.time}</div>
+        <div class="timeline-card">
+          <h3>${item.event}</h3>
+          <p class="timeline-place">${item.place}</p>
+        </div>
       </div>
-    </div>
-  `).join("");
+    `
+    )
+    .join("");
 }
 
 document.getElementById("addTimelineBtn").addEventListener("click", () => {
@@ -827,27 +518,16 @@ document.getElementById("addTimelineBtn").addEventListener("click", () => {
   renderTimeline();
 });
 
-languageSelect.addEventListener("change", (event) => {
-  currentLang = event.target.value;
-  localStorage.setItem("meiram_language", currentLang);
-  renderAll();
-});
-
 venueSearch.addEventListener("input", renderVenues);
 providerSearch.addEventListener("input", renderProviders);
 providerCategory.addEventListener("change", renderProviders);
 
-function renderAll() {
-  renderStaticText();
-  populateProviderCategories();
-  renderMetrics();
-  renderVenueSelectorCard();
-  renderVenues();
-  renderProviders();
-  renderSaved();
-  renderBudget();
-  renderTasks();
-  renderTimeline();
-}
-
-renderAll();
+populateProviderCategories();
+renderMetrics();
+renderVenueSelectorCard();
+renderVenues();
+renderProviders();
+renderSaved();
+renderBudget();
+renderTasks();
+renderTimeline();

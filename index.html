@@ -16,31 +16,23 @@
     <div class="app-shell">
       <aside class="sidebar">
         <div class="brand-block">
-          <img class="brand-logo" src="images/logo.png" alt="Meiram Assist logo" />
-        </div>
-
-        <div class="language-switcher">
-          <label for="languageSelect" id="languageLabel">Language</label>
-          <select id="languageSelect" class="text-input">
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-          </select>
-        </div>
+  	<img class="brand-logo" src="images/logo.png" alt="Meiram Assist logo" />
+	</div>
 
         <nav class="nav-menu">
-          <button class="nav-link active" data-tab="dashboard" id="navDashboard">Dashboard</button>
-          <button class="nav-link" data-tab="venues" id="navVenues">Venue booking</button>
-          <button class="nav-link" data-tab="providers" id="navProviders">Providers</button>
-          <button class="nav-link" data-tab="saved" id="navSaved">Saved</button>
-          <button class="nav-link" data-tab="budget" id="navBudget">Budget</button>
-          <button class="nav-link" data-tab="tasks" id="navTasks">Tasks</button>
-          <button class="nav-link" data-tab="timeline" id="navTimeline">Timeline</button>
+          <button class="nav-link active" data-tab="dashboard">Dashboard</button>
+          <button class="nav-link" data-tab="venues">Venue booking</button>
+          <button class="nav-link" data-tab="providers">Providers</button>
+          <button class="nav-link" data-tab="saved">Saved</button>
+          <button class="nav-link" data-tab="budget">Budget</button>
+          <button class="nav-link" data-tab="tasks">Tasks</button>
+          <button class="nav-link" data-tab="timeline">Timeline</button>
         </nav>
 
         <div class="event-card side-card">
-          <span class="chip chip-gold" id="currentEventLabel">Current event</span>
-          <h3 id="currentEventTitle">Amina & Dias Wedding</h3>
-          <p id="currentEventMeta">126 guests • 24 May 2026 • Almaty</p>
+          <span class="chip chip-gold">Current event</span>
+          <h3>Amina & Dias Wedding</h3>
+          <p>126 guests • 24 May 2026 • Almaty</p>
         </div>
       </aside>
 
@@ -48,52 +40,57 @@
         <section class="tab-panel active" id="dashboard">
           <div class="hero-card">
             <div class="hero-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=80" alt="Wedding celebration" />
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=80"
+              alt="Wedding celebration"
+            />
             <div class="hero-copy">
-              <span class="chip chip-gold" id="heroChip">Full planning workspace</span>
-              <h2 id="heroTitle">Organize weddings and celebrations from one place.</h2>
-              <p id="heroText">Book venues, compare providers, control budget, assign tasks, and manage the full event timeline.</p>
+              <span class="chip chip-gold">Full planning workspace</span>
+              <h2>Organize weddings and celebrations from one place.</h2>
+              <p>
+                Book venues, compare providers, control budget, assign tasks, and manage the full event timeline.
+              </p>
               <div class="hero-actions">
-                <button class="primary-btn" data-go="venues" id="heroExplore">Explore venues</button>
-                <button class="secondary-btn" data-go="providers" id="heroProviders">Find providers</button>
+                <button class="primary-btn" data-go="venues">Explore venues</button>
+                <button class="secondary-btn" data-go="providers">Find providers</button>
               </div>
             </div>
           </div>
 
           <div class="metrics-grid">
             <div class="metric-card">
-              <p id="metricPlannedLabel">Budget planned</p>
+              <p>Budget planned</p>
               <h3 id="plannedTotal">0 ₸</h3>
-              <span id="metricPlannedHint">All categories combined</span>
+              <span>All categories combined</span>
             </div>
             <div class="metric-card">
-              <p id="metricActualLabel">Spent now</p>
+              <p>Spent now</p>
               <h3 id="actualTotal">0 ₸</h3>
-              <span id="metricActualHint">Deposits and paid items</span>
+              <span>Deposits and paid items</span>
             </div>
             <div class="metric-card">
-              <p id="metricTasksLabel">Tasks done</p>
+              <p>Tasks done</p>
               <h3 id="tasksDone">0 / 0</h3>
-              <span id="metricTasksHint">Planning progress</span>
+              <span>Planning progress</span>
             </div>
             <div class="metric-card">
-              <p id="metricStatusLabel">Planning status</p>
+              <p>Planning status</p>
               <h3 id="progressPercent">0%</h3>
-              <span id="metricStatusHint">Based on task completion</span>
+              <span>Based on task completion</span>
             </div>
           </div>
 
           <div class="two-column-grid">
             <div class="panel-card">
               <div class="panel-head">
-                <h3 id="selectedVenueHeading">Selected venue</h3>
+                <h3>Selected venue</h3>
               </div>
               <div id="selectedVenueCard"></div>
             </div>
 
             <div class="panel-card">
               <div class="panel-head">
-                <h3 id="inspirationHeading">Inspiration</h3>
+                <h3>Inspiration</h3>
               </div>
               <div class="gallery-grid">
                 <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1000&q=80" alt="Celebration inspiration" />
@@ -107,8 +104,8 @@
         <section class="tab-panel" id="venues">
           <div class="section-head">
             <div>
-              <h2 id="venuesHeading">Venue booking</h2>
-              <p id="venuesText">Search venues for weddings and celebrations and mark your selected venue.</p>
+              <h2>Venue booking</h2>
+              <p>Search venues for weddings and celebrations and mark your selected venue.</p>
             </div>
             <input id="venueSearch" class="text-input" type="text" placeholder="Search city, type, or venue" />
           </div>
@@ -118,8 +115,8 @@
         <section class="tab-panel" id="providers">
           <div class="section-head providers-head">
             <div>
-              <h2 id="providersHeading">Search professionals and companies</h2>
-              <p id="providersText">Find photographers, decorators, caterers, hosts, musicians, and more.</p>
+              <h2>Search professionals and companies</h2>
+              <p>Find photographers, decorators, caterers, hosts, musicians, and more.</p>
             </div>
             <div class="providers-filters">
               <input id="providerSearch" class="text-input" type="text" placeholder="Search providers" />
@@ -132,20 +129,20 @@
         <section class="tab-panel" id="saved">
           <div class="section-head">
             <div>
-              <h2 id="savedHeading">Saved</h2>
-              <p id="savedText">Your favorite venues and providers in one place.</p>
+              <h2>Saved</h2>
+              <p>Your favorite venues and providers in one place.</p>
             </div>
           </div>
           <div class="saved-layout">
             <div class="panel-card">
               <div class="panel-head">
-                <h3 id="savedVenuesHeading">Saved venues</h3>
+                <h3>Saved venues</h3>
               </div>
               <div id="savedVenuesGrid" class="card-grid card-grid-two"></div>
             </div>
             <div class="panel-card">
               <div class="panel-head">
-                <h3 id="savedProvidersHeading">Saved providers</h3>
+                <h3>Saved providers</h3>
               </div>
               <div id="savedProvidersGrid" class="card-grid card-grid-two"></div>
             </div>
@@ -155,8 +152,8 @@
         <section class="tab-panel" id="budget">
           <div class="section-head">
             <div>
-              <h2 id="budgetHeading">Budget management</h2>
-              <p id="budgetText">Track planned cost, actual spend, and category status.</p>
+              <h2>Budget management</h2>
+              <p>Track planned cost, actual spend, and category status.</p>
             </div>
           </div>
 
@@ -164,15 +161,15 @@
             <div class="panel-card">
               <div class="metrics-grid metrics-grid-small">
                 <div class="metric-card">
-                  <p id="budgetPlannedLabel">Planned</p>
+                  <p>Planned</p>
                   <h3 id="plannedTotalBudget">0 ₸</h3>
                 </div>
                 <div class="metric-card">
-                  <p id="budgetActualLabel">Actual</p>
+                  <p>Actual</p>
                   <h3 id="actualTotalBudget">0 ₸</h3>
                 </div>
                 <div class="metric-card">
-                  <p id="budgetRemainingLabel">Remaining</p>
+                  <p>Remaining</p>
                   <h3 id="remainingTotalBudget">0 ₸</h3>
                 </div>
               </div>
@@ -180,11 +177,11 @@
                 <table>
                   <thead>
                     <tr>
-                      <th id="thCategory">Category</th>
-                      <th id="thPlanned">Planned</th>
-                      <th id="thActual">Actual</th>
-                      <th id="thStatus">Status</th>
-                      <th id="thAction">Action</th>
+                      <th>Category</th>
+                      <th>Planned</th>
+                      <th>Actual</th>
+                      <th>Status</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody id="budgetTableBody"></tbody>
@@ -193,7 +190,7 @@
             </div>
 
             <div class="panel-card form-card">
-              <h3 id="addBudgetHeading">Add budget item</h3>
+              <h3>Add budget item</h3>
               <input id="newBudgetCategory" class="text-input" type="text" placeholder="Category" />
               <input id="newBudgetPlanned" class="text-input" type="number" placeholder="Planned amount" />
               <button id="addBudgetBtn" class="primary-btn full-btn">Add item</button>
@@ -204,8 +201,8 @@
         <section class="tab-panel" id="tasks">
           <div class="section-head providers-head">
             <div>
-              <h2 id="tasksHeading">Task management</h2>
-              <p id="tasksText">Assign and track planning tasks before the event day.</p>
+              <h2>Task management</h2>
+              <p>Assign and track planning tasks before the event day.</p>
             </div>
             <div class="task-add-box">
               <input id="newTaskInput" class="text-input" type="text" placeholder="Add a task" />
@@ -218,8 +215,8 @@
         <section class="tab-panel" id="timeline">
           <div class="section-head">
             <div>
-              <h2 id="timelineHeading">Timeline management</h2>
-              <p id="timelineText">Build the event-day sequence from preparation to the final celebration.</p>
+              <h2>Timeline management</h2>
+              <p>Build the event-day sequence from preparation to the final celebration.</p>
             </div>
           </div>
 
@@ -229,7 +226,7 @@
             </div>
 
             <div class="panel-card form-card">
-              <h3 id="addTimelineHeading">Add timeline item</h3>
+              <h3>Add timeline item</h3>
               <input id="timelineTime" class="text-input" type="time" />
               <input id="timelineEvent" class="text-input" type="text" placeholder="Event name" />
               <input id="timelinePlace" class="text-input" type="text" placeholder="Location" />

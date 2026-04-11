@@ -51,16 +51,18 @@ img {
 .brand-block {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .brand-logo {
   width: 150px;
   height: auto;
   object-fit: contain;
+  display: block;
   border-radius: 0;
   box-shadow: none;
   background: transparent;
-  display: block;
 }
 
 .brand-block h1,

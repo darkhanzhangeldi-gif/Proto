@@ -51,16 +51,16 @@ img {
 .brand-block {
   display: flex;
   align-items: center;
-  gap: 14px;
 }
 
 .brand-logo {
-  width: 56px;
-  height: 56px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  background: #fff;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  display: block;
 }
 
 .brand-block h1,
@@ -376,7 +376,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 4px 8px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;

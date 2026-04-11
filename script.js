@@ -7,7 +7,7 @@ const venues = [
     price: 2800000,
     rating: 4.9,
     type: "Wedding",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
+    image: "images/dorogie_main.jpeg",
     booked: true,
     saved: false,
   },

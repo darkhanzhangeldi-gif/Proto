@@ -7,7 +7,7 @@ const venues = [
     price: 2800000,
     rating: 4.9,
     type: "Wedding",
-    image: "images/dorogie_main.jpeg",
+    image: "images/dorogie_main.jpg",
     booked: true,
     saved: false,
   },

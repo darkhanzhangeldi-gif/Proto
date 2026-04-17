@@ -8,6 +8,7 @@ const translations = {
     navBudget: "Budget",
     navTasks: "Tasks",
     navTimeline: "Timeline",
+    navAi: "AI Assistant",
     currentEvent: "Current event",
     currentEventTitle: "Amina & Dias Wedding",
     currentEventMeta: "126 guests • 24 May 2026 • Almaty",
@@ -60,6 +61,22 @@ const translations = {
     timelineEventPlaceholder: "Event name",
     timelinePlacePlaceholder: "Location",
     addTimelineBtn: "Add to timeline",
+    aiHeading: "AI Assistant",
+    aiText: "See how Meiram Assist could guide users with planning decisions.",
+    aiChatTitle: "Meiram AI Assistant",
+    aiChatSubtitle: "Example static conversation",
+    aiDemoBadge: "Demo",
+    aiInputPlaceholder: "Ask Meiram AI...",
+    aiSendBtn: "Send",
+    aiFeatureHeading: "What AI could do",
+    aiFeature1Title: "Budget guidance",
+    aiFeature1Text: "Suggest how to divide spending across venue, food, decor, and services.",
+    aiFeature2Title: "Vendor recommendations",
+    aiFeature2Text: "Recommend providers based on city, budget, and event size.",
+    aiFeature3Title: "Timeline advice",
+    aiFeature3Text: "Help users build a realistic event-day sequence.",
+    aiFeature4Title: "Decision support",
+    aiFeature4Text: "Explain tradeoffs between cheaper and premium options.",
     noVenueSelected: "No venue selected yet.",
     booked: "Booked",
     selectedVenue: "Selected venue",
@@ -75,12 +92,10 @@ const translations = {
     guests: "guests",
     noSavedVenues: "No saved venues yet.",
     noSavedProviders: "No saved providers yet.",
-    addBudgetStatus: "Planned",
     completed: "Completed",
     open: "Open",
     owner: "Owner",
     due: "Due",
-    details: "Details",
     statuses: {
       Paid: "Paid",
       Deposit: "Deposit",
@@ -119,6 +134,32 @@ const translations = {
       "Banquet area": "Banquet area",
       Ballroom: "Ballroom",
     },
+    aiChat: [
+      {
+        role: "user",
+        text: "I have a budget of 4.5 million KZT for 150 guests in Almaty. Where should I start?",
+      },
+      {
+        role: "assistant",
+        text: "Start with the venue and catering because they usually take the largest share of the budget. For 150 guests, I would first compare mid-range halls in Almaty, then reserve around 35–45% of the budget for food and venue.",
+      },
+      {
+        role: "user",
+        text: "Can you suggest what else I should prioritize?",
+      },
+      {
+        role: "assistant",
+        text: "After venue and catering, prioritize photo/video, decor, and host services. I would also recommend keeping a contingency amount for unexpected costs so the final spending stays under control.",
+      },
+      {
+        role: "user",
+        text: "What if I want to reduce spending?",
+      },
+      {
+        role: "assistant",
+        text: "You could reduce guest count, choose a venue with bundled packages, simplify decor, or book providers with standard packages instead of fully customized ones.",
+      },
+    ],
   },
   ru: {
     language: "Язык",
@@ -129,6 +170,7 @@ const translations = {
     navBudget: "Бюджет",
     navTasks: "Задачи",
     navTimeline: "Таймлайн",
+    navAi: "AI Ассистент",
     currentEvent: "Текущее событие",
     currentEventTitle: "Свадьба Амины и Диаса",
     currentEventMeta: "126 гостей • 24 мая 2026 • Алматы",
@@ -181,6 +223,22 @@ const translations = {
     timelineEventPlaceholder: "Название события",
     timelinePlacePlaceholder: "Локация",
     addTimelineBtn: "Добавить в таймлайн",
+    aiHeading: "AI Ассистент",
+    aiText: "Посмотрите, как Meiram Assist может помогать с решениями при планировании.",
+    aiChatTitle: "Meiram AI Assistant",
+    aiChatSubtitle: "Пример статического диалога",
+    aiDemoBadge: "Демо",
+    aiInputPlaceholder: "Спросите Meiram AI...",
+    aiSendBtn: "Отправить",
+    aiFeatureHeading: "Что мог бы делать AI",
+    aiFeature1Title: "Подсказки по бюджету",
+    aiFeature1Text: "Подсказывать, как распределить расходы между площадкой, едой, декором и услугами.",
+    aiFeature2Title: "Рекомендации подрядчиков",
+    aiFeature2Text: "Предлагать подрядчиков по городу, бюджету и масштабу мероприятия.",
+    aiFeature3Title: "Советы по таймлайну",
+    aiFeature3Text: "Помогать строить реалистичную последовательность дня мероприятия.",
+    aiFeature4Title: "Поддержка решений",
+    aiFeature4Text: "Объяснять разницу между более дешевыми и премиальными вариантами.",
     noVenueSelected: "Площадка пока не выбрана.",
     booked: "Забронировано",
     selectedVenue: "Выбранная площадка",
@@ -196,12 +254,10 @@ const translations = {
     guests: "гостей",
     noSavedVenues: "Пока нет избранных площадок.",
     noSavedProviders: "Пока нет избранных подрядчиков.",
-    addBudgetStatus: "План",
     completed: "Выполнено",
     open: "Открыто",
     owner: "Ответственный",
     due: "Срок",
-    details: "Подробнее",
     statuses: {
       Paid: "Оплачено",
       Deposit: "Депозит",
@@ -240,6 +296,32 @@ const translations = {
       "Banquet area": "Банкетная зона",
       Ballroom: "Бальный зал",
     },
+    aiChat: [
+      {
+        role: "user",
+        text: "У меня бюджет 4.5 миллиона тенге на 150 гостей в Алматы. С чего начать?",
+      },
+      {
+        role: "assistant",
+        text: "Начните с площадки и кейтеринга, потому что они обычно занимают самую большую часть бюджета. Для 150 гостей я бы сначала сравнил залы среднего сегмента в Алматы, а затем заложил около 35–45% бюджета на площадку и еду.",
+      },
+      {
+        role: "user",
+        text: "Что еще стоит поставить в приоритет?",
+      },
+      {
+        role: "assistant",
+        text: "После площадки и кейтеринга стоит поставить в приоритет фото/видео, декор и ведущего. Также лучше оставить резерв на непредвиденные расходы, чтобы не выйти за рамки бюджета.",
+      },
+      {
+        role: "user",
+        text: "А если я хочу сократить расходы?",
+      },
+      {
+        role: "assistant",
+        text: "Можно сократить количество гостей, выбрать площадку с готовыми пакетами, упростить декор или взять подрядчиков со стандартными пакетами вместо полностью индивидуальных решений.",
+      },
+    ],
   },
 };
 
@@ -449,6 +531,7 @@ function renderStaticText() {
   document.getElementById("navBudget").textContent = dict.navBudget;
   document.getElementById("navTasks").textContent = dict.navTasks;
   document.getElementById("navTimeline").textContent = dict.navTimeline;
+  document.getElementById("navAi").textContent = dict.navAi;
   document.getElementById("currentEventLabel").textContent = dict.currentEvent;
   document.getElementById("currentEventTitle").textContent = dict.currentEventTitle;
   document.getElementById("currentEventMeta").textContent = dict.currentEventMeta;
@@ -501,6 +584,22 @@ function renderStaticText() {
   document.getElementById("timelineEvent").placeholder = dict.timelineEventPlaceholder;
   document.getElementById("timelinePlace").placeholder = dict.timelinePlacePlaceholder;
   document.getElementById("addTimelineBtn").textContent = dict.addTimelineBtn;
+  document.getElementById("aiHeading").textContent = dict.aiHeading;
+  document.getElementById("aiText").textContent = dict.aiText;
+  document.getElementById("aiChatTitle").textContent = dict.aiChatTitle;
+  document.getElementById("aiChatSubtitle").textContent = dict.aiChatSubtitle;
+  document.getElementById("aiDemoBadge").textContent = dict.aiDemoBadge;
+  document.getElementById("aiInputPlaceholder").value = dict.aiInputPlaceholder;
+  document.getElementById("aiSendBtn").textContent = dict.aiSendBtn;
+  document.getElementById("aiFeatureHeading").textContent = dict.aiFeatureHeading;
+  document.getElementById("aiFeature1Title").textContent = dict.aiFeature1Title;
+  document.getElementById("aiFeature1Text").textContent = dict.aiFeature1Text;
+  document.getElementById("aiFeature2Title").textContent = dict.aiFeature2Title;
+  document.getElementById("aiFeature2Text").textContent = dict.aiFeature2Text;
+  document.getElementById("aiFeature3Title").textContent = dict.aiFeature3Title;
+  document.getElementById("aiFeature3Text").textContent = dict.aiFeature3Text;
+  document.getElementById("aiFeature4Title").textContent = dict.aiFeature4Title;
+  document.getElementById("aiFeature4Text").textContent = dict.aiFeature4Text;
   languageSelect.value = currentLang;
 }
 
@@ -538,6 +637,7 @@ function renderMetrics() {
   document.getElementById("actualTotal").textContent = formatKZT(actualTotal);
   document.getElementById("tasksDone").textContent = `${completed} / ${tasks.length}`;
   document.getElementById("progressPercent").textContent = `${percent}%`;
+
   document.getElementById("plannedTotalBudget").textContent = formatKZT(plannedTotal);
   document.getElementById("actualTotalBudget").textContent = formatKZT(actualTotal);
   document.getElementById("remainingTotalBudget").textContent = formatKZT(plannedTotal - actualTotal);
@@ -546,38 +646,44 @@ function renderMetrics() {
 function renderVenues() {
   const grid = document.getElementById("venuesGrid");
   const value = venueSearch.value.trim().toLowerCase();
-  const filtered = venues.filter((venue) => `${venue.name} ${venue.city} ${venue.type}`.toLowerCase().includes(value));
+  const filtered = venues.filter((venue) =>
+    `${venue.name} ${venue.city} ${venue.type}`.toLowerCase().includes(value)
+  );
 
-  grid.innerHTML = filtered.map((venue) => `
-    <article class="venue-card">
-      <img src="${venue.image}" alt="${venue.name}" />
-      <div class="venue-body">
-        <div class="card-top">
-          <div>
-            <h3>${venue.name}</h3>
-            <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+  grid.innerHTML = filtered
+    .map(
+      (venue) => `
+      <article class="venue-card">
+        <img src="${venue.image}" alt="${venue.name}" />
+        <div class="venue-body">
+          <div class="card-top">
+            <div>
+              <h3>${venue.name}</h3>
+              <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+            </div>
+            <span class="rating-badge">⭐ ${venue.rating}</span>
           </div>
-          <span class="rating-badge">⭐ ${venue.rating}</span>
-        </div>
 
-        <div class="venue-meta-grid">
-          <div class="meta-box">
-            <span class="venue-meta">${t().capacity}</span>
-            <strong>${venue.guests} ${t().guests}</strong>
+          <div class="venue-meta-grid">
+            <div class="meta-box">
+              <span class="venue-meta">${t().capacity}</span>
+              <strong>${venue.guests} ${t().guests}</strong>
+            </div>
+            <div class="meta-box">
+              <span class="venue-meta">${t().from}</span>
+              <strong>${formatKZT(venue.price)}</strong>
+            </div>
           </div>
-          <div class="meta-box">
-            <span class="venue-meta">${t().from}</span>
-            <strong>${formatKZT(venue.price)}</strong>
-          </div>
-        </div>
 
-        <div class="card-actions">
-          <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().bookThisVenue}</button>
-          <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${venue.saved ? t().saved : t().save}</button>
+          <div class="card-actions">
+            <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().bookThisVenue}</button>
+            <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${venue.saved ? t().saved : t().save}</button>
+          </div>
         </div>
-      </div>
-    </article>
-  `).join("");
+      </article>
+    `
+    )
+    .join("");
 }
 
 function bookVenue(id) {
@@ -602,7 +708,9 @@ window.toggleSaveVenue = toggleSaveVenue;
 
 function populateProviderCategories() {
   const categories = ["All", ...new Set(providers.map((provider) => provider.category))];
-  providerCategory.innerHTML = categories.map((category) => `<option value="${category}">${category === "All" ? t().categoryAll : translateCategory(category)}</option>`).join("");
+  providerCategory.innerHTML = categories
+    .map((category) => `<option value="${category}">${category === "All" ? t().categoryAll : translateCategory(category)}</option>`)
+    .join("");
 }
 
 function renderProviders() {
@@ -616,30 +724,34 @@ function renderProviders() {
     return text.includes(searchValue) && categoryMatch;
   });
 
-  grid.innerHTML = filtered.map((provider) => `
-    <article class="provider-card">
-      <img src="${provider.image}" alt="${provider.name}" />
-      <div class="provider-body">
-        <div class="card-top">
-          <div>
-            <span class="category-badge">${translateCategory(provider.category)}</span>
-            <h3 style="margin-top: 10px;">${provider.name}</h3>
-            <p class="provider-sub">${provider.company} • ${provider.city}</p>
+  grid.innerHTML = filtered
+    .map(
+      (provider) => `
+      <article class="provider-card">
+        <img src="${provider.image}" alt="${provider.name}" />
+        <div class="provider-body">
+          <div class="card-top">
+            <div>
+              <span class="category-badge">${translateCategory(provider.category)}</span>
+              <h3 style="margin-top: 10px;">${provider.name}</h3>
+              <p class="provider-sub">${provider.company} • ${provider.city}</p>
+            </div>
+            <span class="rating-badge">⭐ ${provider.rating}</span>
           </div>
-          <span class="rating-badge">⭐ ${provider.rating}</span>
+          <div class="provider-info">
+            <span>${t().from.toLowerCase()} ${formatKZT(provider.priceFrom)}</span>
+            <span>${provider.phone}</span>
+            <span>${provider.email}</span>
+          </div>
+          <div class="card-actions">
+            <button class="primary-btn">${t().contact}</button>
+            <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${provider.saved ? t().saved : t().save}</button>
+          </div>
         </div>
-        <div class="provider-info">
-          <span>${t().from.toLowerCase()} ${formatKZT(provider.priceFrom)}</span>
-          <span>${provider.phone}</span>
-          <span>${provider.email}</span>
-        </div>
-        <div class="card-actions">
-          <button class="primary-btn">${t().contact}</button>
-          <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${provider.saved ? t().saved : t().save}</button>
-        </div>
-      </div>
-    </article>
-  `).join("");
+      </article>
+    `
+    )
+    .join("");
 }
 
 function toggleSaveProvider(id) {
@@ -660,60 +772,72 @@ function renderSaved() {
   const savedProviders = providers.filter((item) => item.saved);
 
   savedVenuesGrid.innerHTML = savedVenues.length
-    ? savedVenues.map((venue) => `
-      <article class="venue-card">
-        <img src="${venue.image}" alt="${venue.name}" />
-        <div class="venue-body">
-          <div class="card-top">
-            <div>
-              <h3>${venue.name}</h3>
-              <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+    ? savedVenues
+        .map(
+          (venue) => `
+          <article class="venue-card">
+            <img src="${venue.image}" alt="${venue.name}" />
+            <div class="venue-body">
+              <div class="card-top">
+                <div>
+                  <h3>${venue.name}</h3>
+                  <p class="venue-meta">${venue.city} • ${translateCategory(venue.type)}</p>
+                </div>
+                <span class="rating-badge">⭐ ${venue.rating}</span>
+              </div>
+              <div class="card-actions">
+                <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().book}</button>
+                <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${t().remove}</button>
+              </div>
             </div>
-            <span class="rating-badge">⭐ ${venue.rating}</span>
-          </div>
-          <div class="card-actions">
-            <button class="book-btn" onclick="bookVenue(${venue.id})">${venue.booked ? t().selectedVenue : t().book}</button>
-            <button class="detail-btn" onclick="toggleSaveVenue(${venue.id})">${t().remove}</button>
-          </div>
-        </div>
-      </article>
-    `).join("")
+          </article>
+        `
+        )
+        .join("")
     : `<p class="empty-state">${t().noSavedVenues}</p>`;
 
   savedProvidersGrid.innerHTML = savedProviders.length
-    ? savedProviders.map((provider) => `
-      <article class="provider-card">
-        <img src="${provider.image}" alt="${provider.name}" />
-        <div class="provider-body">
-          <div class="card-top">
-            <div>
-              <span class="category-badge">${translateCategory(provider.category)}</span>
-              <h3 style="margin-top: 10px;">${provider.name}</h3>
-              <p class="provider-sub">${provider.company} • ${provider.city}</p>
+    ? savedProviders
+        .map(
+          (provider) => `
+          <article class="provider-card">
+            <img src="${provider.image}" alt="${provider.name}" />
+            <div class="provider-body">
+              <div class="card-top">
+                <div>
+                  <span class="category-badge">${translateCategory(provider.category)}</span>
+                  <h3 style="margin-top: 10px;">${provider.name}</h3>
+                  <p class="provider-sub">${provider.company} • ${provider.city}</p>
+                </div>
+                <span class="rating-badge">⭐ ${provider.rating}</span>
+              </div>
+              <div class="card-actions">
+                <button class="primary-btn">${t().contact}</button>
+                <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${t().remove}</button>
+              </div>
             </div>
-            <span class="rating-badge">⭐ ${provider.rating}</span>
-          </div>
-          <div class="card-actions">
-            <button class="primary-btn">${t().contact}</button>
-            <button class="detail-btn" onclick="toggleSaveProvider(${provider.id})">${t().remove}</button>
-          </div>
-        </div>
-      </article>
-    `).join("")
+          </article>
+        `
+        )
+        .join("")
     : `<p class="empty-state">${t().noSavedProviders}</p>`;
 }
 
 function renderBudget() {
   const body = document.getElementById("budgetTableBody");
-  body.innerHTML = budget.map((item) => `
-    <tr>
-      <td>${translateCategory(item.category)}</td>
-      <td>${formatKZT(item.planned)}</td>
-      <td>${formatKZT(item.actual)}</td>
-      <td><span class="status-badge">${translateStatus(item.status)}</span></td>
-      <td><button class="delete-btn" onclick="removeBudgetItem(${item.id})">${t().remove}</button></td>
-    </tr>
-  `).join("");
+  body.innerHTML = budget
+    .map(
+      (item) => `
+      <tr>
+        <td>${translateCategory(item.category)}</td>
+        <td>${formatKZT(item.planned)}</td>
+        <td>${formatKZT(item.actual)}</td>
+        <td><span class="status-badge">${translateStatus(item.status)}</span></td>
+        <td><button class="delete-btn" onclick="removeBudgetItem(${item.id})">${t().remove}</button></td>
+      </tr>
+    `
+    )
+    .join("");
 }
 
 function removeBudgetItem(id) {
@@ -748,21 +872,25 @@ document.getElementById("addBudgetBtn").addEventListener("click", () => {
 
 function renderTasks() {
   const list = document.getElementById("tasksList");
-  list.innerHTML = tasks.map((task) => `
-    <article class="task-card">
-      <div class="task-main">
-        <button class="task-toggle ${task.done ? "done" : ""}" onclick="toggleTask(${task.id})"></button>
-        <div>
-          <h3 class="task-title ${task.done ? "done" : ""}">${task.title}</h3>
-          <p class="task-sub">${t().owner}: ${task.owner} • ${t().due}: ${task.due}</p>
+  list.innerHTML = tasks
+    .map(
+      (task) => `
+      <article class="task-card">
+        <div class="task-main">
+          <button class="task-toggle ${task.done ? "done" : ""}" onclick="toggleTask(${task.id})"></button>
+          <div>
+            <h3 class="task-title ${task.done ? "done" : ""}">${task.title}</h3>
+            <p class="task-sub">${t().owner}: ${task.owner} • ${t().due}: ${task.due}</p>
+          </div>
         </div>
-      </div>
-      <div class="card-actions">
-        <span class="priority-badge priority-${task.priority.toLowerCase()}">${translatePriority(task.priority)}</span>
-        <span class="status-badge">${task.done ? t().completed : t().open}</span>
-      </div>
-    </article>
-  `).join("");
+        <div class="card-actions">
+          <span class="priority-badge priority-${task.priority.toLowerCase()}">${translatePriority(task.priority)}</span>
+          <span class="status-badge">${task.done ? t().completed : t().open}</span>
+        </div>
+      </article>
+    `
+    )
+    .join("");
 }
 
 function toggleTask(id) {
@@ -797,15 +925,32 @@ function renderTimeline() {
   const list = document.getElementById("timelineList");
   const ordered = [...timeline].sort((a, b) => a.time.localeCompare(b.time));
 
-  list.innerHTML = ordered.map((item) => `
-    <div class="timeline-item">
-      <div class="timeline-time">${item.time}</div>
-      <div class="timeline-card">
-        <h3>${translateEvent(item.event)}</h3>
-        <p class="timeline-place">${translatePlace(item.place)}</p>
+  list.innerHTML = ordered
+    .map(
+      (item) => `
+      <div class="timeline-item">
+        <div class="timeline-time">${item.time}</div>
+        <div class="timeline-card">
+          <h3>${translateEvent(item.event)}</h3>
+          <p class="timeline-place">${translatePlace(item.place)}</p>
+        </div>
       </div>
-    </div>
-  `).join("");
+    `
+    )
+    .join("");
+}
+
+function renderAiChat() {
+  const history = document.getElementById("aiChatHistory");
+  history.innerHTML = t().aiChat
+    .map(
+      (message) => `
+      <div class="chat-bubble ${message.role}">
+        ${message.text}
+      </div>
+    `
+    )
+    .join("");
 }
 
 document.getElementById("addTimelineBtn").addEventListener("click", () => {
@@ -848,6 +993,7 @@ function renderAll() {
   renderBudget();
   renderTasks();
   renderTimeline();
+  renderAiChat();
 }
 
 renderAll();

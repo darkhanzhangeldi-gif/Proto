@@ -21,10 +21,13 @@
 
         <div class="language-switcher">
           <label for="languageSelect" id="languageLabel">Language</label>
-          <select id="languageSelect" class="text-input">
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-          </select>
+          <div class="select-wrap">
+            <select id="languageSelect" class="text-input language-select">
+              <option value="en">English</option>
+              <option value="ru">Русский</option>
+            </select>
+            <span class="select-arrow">⌄</span>
+          </div>
         </div>
 
         <nav class="nav-menu">
@@ -35,6 +38,7 @@
           <button class="nav-link" data-tab="budget" id="navBudget">Budget</button>
           <button class="nav-link" data-tab="tasks" id="navTasks">Tasks</button>
           <button class="nav-link" data-tab="timeline" id="navTimeline">Timeline</button>
+          <button class="nav-link" data-tab="ai" id="navAi">AI Assistant</button>
         </nav>
 
         <div class="event-card side-card">
@@ -123,7 +127,10 @@
             </div>
             <div class="providers-filters">
               <input id="providerSearch" class="text-input" type="text" placeholder="Search providers" />
-              <select id="providerCategory" class="text-input"></select>
+              <div class="select-wrap provider-select-wrap">
+                <select id="providerCategory" class="text-input language-select"></select>
+                <span class="select-arrow">⌄</span>
+              </div>
             </div>
           </div>
           <div id="providersGrid" class="card-grid"></div>
@@ -234,6 +241,56 @@
               <input id="timelineEvent" class="text-input" type="text" placeholder="Event name" />
               <input id="timelinePlace" class="text-input" type="text" placeholder="Location" />
               <button id="addTimelineBtn" class="primary-btn full-btn">Add to timeline</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="ai">
+          <div class="section-head">
+            <div>
+              <h2 id="aiHeading">AI Assistant</h2>
+              <p id="aiText">See how Meiram Assist could guide users with planning decisions.</p>
+            </div>
+          </div>
+
+          <div class="ai-layout">
+            <div class="panel-card ai-chat-card">
+              <div class="ai-chat-header">
+                <div>
+                  <h3 id="aiChatTitle">Meiram AI Assistant</h3>
+                  <p id="aiChatSubtitle">Example static conversation</p>
+                </div>
+                <span class="status-badge" id="aiDemoBadge">Demo</span>
+              </div>
+
+              <div class="ai-chat-history" id="aiChatHistory"></div>
+
+              <div class="ai-chat-input">
+                <input id="aiInputPlaceholder" class="text-input" type="text" value="Ask Meiram AI..." readonly />
+                <button class="primary-btn" id="aiSendBtn" type="button">Send</button>
+              </div>
+            </div>
+
+            <div class="panel-card ai-side-card">
+              <h3 id="aiFeatureHeading">What AI could do</h3>
+              <div class="ai-feature-list">
+                <div class="ai-feature-item">
+                  <strong id="aiFeature1Title">Budget guidance</strong>
+                  <p id="aiFeature1Text">Suggest how to divide spending across venue, food, decor, and services.</p>
+                </div>
+                <div class="ai-feature-item">
+                  <strong id="aiFeature2Title">Vendor recommendations</strong>
+                  <p id="aiFeature2Text">Recommend providers based on city, budget, and event size.</p>
+                </div>
+                <div class="ai-feature-item">
+                  <strong id="aiFeature3Title">Timeline advice</strong>
+                  <p id="aiFeature3Text">Help users build a realistic event-day sequence.</p>
+                </div>
+                <div class="ai-feature-item">
+                  <strong id="aiFeature4Title">Decision support</strong>
+                  <p id="aiFeature4Text">Explain tradeoffs between cheaper and premium options.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
